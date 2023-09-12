@@ -7,11 +7,11 @@
 int main()
 {
 	using namespace std;
+
 	vector<bitset<32>> bvec;
 	mt19937 eng(random_device{}());
 
-	for (int i{}; i < 500; ++i)
-	{
+	for (int i{}; i < 500; ++i) {
 		bvec.emplace_back(eng());
 	}
 
