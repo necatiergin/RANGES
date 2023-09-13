@@ -10,6 +10,6 @@
 
 [From Iterators To Ranges](http://becpp.org/blog/wp-content/uploads/2019/10/Arno-Schoedl-From-Iterators-To-Ranges.pdf)
 
-https://www.think-cell.com/en/career/talks/better-ranges#111
+[Better C++ Ranges- Arno Schödl](https://www.think-cell.com/en/career/talks/better-ranges#111)
 
 [Making Your Own Container Compatible With C++20 Ranges](https://www.reedbeta.com/blog/ranges-compatible-containers/)
