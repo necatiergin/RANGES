@@ -6,7 +6,7 @@
 
 [C++20 Ranges: The Key Advantage - Algorithm Composition](https://www.cppstories.com/2022/ranges-composition/)
 
-[revzin](https://brevzin.github.io/c++/2023/03/14/prefer-views-meow/)
+[Prefer views::meow - Barry Revzin](https://brevzin.github.io/c++/2023/03/14/prefer-views-meow/)
 
 http://becpp.org/blog/wp-content/uploads/2019/10/Arno-Schoedl-From-Iterators-To-Ranges.pdf
 
