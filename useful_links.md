@@ -4,7 +4,7 @@
 
 [marius bancila - C++ code samples before and after Ranges](https://mariusbancila.ro/blog/2019/01/20/cpp-code-samples-before-and-after-ranges/)
 
-https://www.cppstories.com/2022/ranges-composition/
+[C++20 Ranges: The Key Advantage - Algorithm Composition](https://www.cppstories.com/2022/ranges-composition/)
 
 [revzin](https://brevzin.github.io/c++/2023/03/14/prefer-views-meow/)
 
