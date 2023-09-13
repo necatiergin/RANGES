@@ -12,4 +12,4 @@
 
 https://www.think-cell.com/en/career/talks/better-ranges#111
 
-https://www.reedbeta.com/blog/ranges-compatible-containers/
+[Making Your Own Container Compatible With C++20 Ranges](https://www.reedbeta.com/blog/ranges-compatible-containers/)
