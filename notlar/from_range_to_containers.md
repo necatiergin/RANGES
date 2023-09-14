@@ -20,7 +20,7 @@ vector vec(std::ranges::begin(rng), std::ranges::end(rng));
 Ama burada da şöyle bir sorun var. Kurucu işleve gönderilen argümanların aynı türden olması gerekiyor.
 Birçok _range_ için _begin_ ve _end_ fonksiyonlarının geri dönüş türleri farklı. 
 Eğer bunların türleri aynı ise böyle _range_'ler _common_range_ diyoruz.
-_common_range_'ler _common_range_ concept'ini karşılıyorlar.
+_common_range_'ler _common_range_ _concept_'ini karşılıyorlar.
 
 _common range_ olmayan bir _range_'i _common range_'e dönüştürebiliriz.
 
@@ -28,9 +28,10 @@ _common range_ olmayan bir _range_'i _common range_'e dönüştürebiliriz.
 auto crng = std::views::common_range(rng);
 ```
 Ancak bu da bütün _range_'ler için çalışmıyor.
-_basic_istream_view_ gibi iteratorleri kopyalanamayan _range_'ler _common range_'e dönüştürülemiyorlar. Peki, başka hangi yöntemler söz konusu olabilir?
+_basic_istream_view_ gibi iteratorleri kopyalanamayan _range_'ler _common range_'e dönüştürülemiyorlar. 
+Peki, başka hangi yöntemler söz konusu olabilir?
 
-Önce _container_'i _default constructor_ ile hayata başlatıp edip daha sonra ona range'deki öğeleri ekleyebiliriz (insert edebiliriz.)
+Önce _container_'i _default constructor_ ile hayata başlatıp edip daha sonra ona _range_'deki öğeleri ekleyebiliriz ( edebiliriz.)
 
 Ancak burada CTAD'dan faydalanamayız.
 ```
@@ -43,7 +44,8 @@ Ama türün ne olduğunu yazmak zor olabilir. Bu amaçla _range_value_t_ yardım
 std::vector<std::ranges::range_value_t<decltype(rng)>> vec;
 std::ranges::copy(rng, std::back_inserter(vec));
 ```
-burada _reserve_ fonksiyonu çağırmak daha iyi bir fikir. Ancak bunun için de _range_'in _size_'ının bilinmesi gerekiyor.
+Burada _std::vector_ sınıfının _reserve_ üye fonksiyonu çağırmak verim açısından iyi olabilir. 
+Ancak bunun için de _range_'in _size_'ının bilinmesi gerekiyor.
 Bunun için de _range_'in _sized_range_ olması gerekir:
 
 ```
