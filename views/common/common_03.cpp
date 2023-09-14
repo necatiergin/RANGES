@@ -3,10 +3,8 @@ views::common(rng)
 
 Geri dönüş türü
 
-    a) rng begin ve end fonksiyonlarının geri dönüş değeri aynı türden olan bir view ise
-	rng'nin türü
-	b) rng begin ve end fonksiyonları türü aynı türden olan bir bir range ise 
-	std::ranges::ref_view
+	a) rng begin ve end fonksiyonlarının geri dönüş değeri aynı türden olan bir view ise: rng'nin türü
+	b) rng begin ve end fonksiyonları türü aynı türden olan bir bir range ise: std::ranges::ref_view
 	c) common_view
 */
 
