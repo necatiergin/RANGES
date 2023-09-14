@@ -9,6 +9,7 @@ int main()
     
     auto rng = ivec | std::views::take_while([](int x) {return x % 20;});
 
-    auto sum = std::accumulate(rng.begin(), rng.end(), 0); //error
+    //auto sum = std::accumulate(rng.begin(), rng.end(), 0); //error
+    static_assert(std::ranges::common_range<decltype(rng)>); //fails
     //...
 }
