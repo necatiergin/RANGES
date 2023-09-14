@@ -30,23 +30,21 @@ auto crng = std::views::common_range(rng);
 Ancak bu da bütün _range_'ler için çalışmıyor.
 _basic_istream_view_ gibi iteratorleri kopyalanamayan _range_'ler _common range_'e dönüştürülemiyorlar. Peki, başka hangi yöntemler söz konusu olabilir?
 
-önce container'i default init edip sonra ona insert edeliö
-ama burada da CTAD kullanılmaz
+Önce _container_'i _default constructor_ ile hayata başlatıp edip daha sonra ona range'deki öğeleri ekleyebiliriz (insert edebiliriz.)
+
+Ancak burada CTAD'dan faydalanamayız.
 ```
 std::vector<mytype> vec;
 std::ranges::copy(rng, std::back_inserter(vec));
 ```
-idare eder. Ama türün ne olduğunu yazmak zor olabilir
+Ama türün ne olduğunu yazmak zor olabilir. Bu amaçla _range_value_t_ yardımcısını kullanabiliriz:
 
-_range_value_t_ yardımcısını kullanabiliriz.
-
-``
+```
 std::vector<std::ranges::range_value_t<decltype(rng)>> vec;
 std::ranges::copy(rng, std::back_inserter(vec));
 ```
 burada _reserve_ fonksiyonu çağırmak daha iyi bir fikir. Ancak bunun için de _range_'in _size_'ının bilinmesi gerekiyor.
-Bunun için de _range_'in _sized_range_ olması gerekir.
-
+Bunun için de _range_'in _sized_range_ olması gerekir:
 
 ```
 if constexpr(std::ranges::sized_range<decltype(r)>) {
