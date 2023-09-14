@@ -3,8 +3,8 @@ _rng_ bir _range_ olsun. Ve bu _range_'i bir _container_'a örneğin bir _std::v
 ```
 vector<int> ivec(rng);
 ```
-Kapların böyle bir kurucu işlevi olmadığı için yukarıdaki kod sentaks hatası oluşturacak. Eric Niebler'in kütüphanesinde to isimli fonksiyon bu işi görüyor. 
-Bu fonksiyon C++23 standardı ile dile ekleniyor:
+Kapların böyle bir kurucu işlevi olmadığı için yukarıdaki kod sentaks hatası oluşturacak. _Eric Niebler_'in kütüphanesinde _to_ isimli fonksiyon bu işi görüyor. 
+Bu fonksiyon _C++23_ standardı ile standart kütüphaneye ekleniyor:
 ```
 auto v = std::ranges::to<std::vector>(r);
 ```
