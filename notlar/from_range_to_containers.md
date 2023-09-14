@@ -18,17 +18,17 @@ ya da
 vector vec(std::ranges::begin(rng), std::ranges::end(rng));
 ```
 Ama burada da şöyle bir sorun var. Kurucu işleve gönderilen argümanların aynı türden olması gerekiyor.
-Birçok range için _begin_ ve _end_ fonksiyonlarının geri dönüş türleri farklı. 
+Birçok _range_ için _begin_ ve _end_ fonksiyonlarının geri dönüş türleri farklı. 
 Eğer bunların türleri aynı ise böyle _range_'ler _common_range_ diyoruz.
 _common_range_'ler _common_range_ concept'ini karşılıyorlar.
 
-COMMON RANGE OLMAYAN BİR RABNEGİ COMMON RANGE E DÖNÜŞTÜREBİLİRİ<
+_common range_ olmayan bir _range_'i _common range_'e dönüştürebiliriz.
 
 ```
 auto crng = std::views::common_range(rng);
 ```
 Ancak bu da bütün _range_'ler için çalışmıyor.
-_basic_istream_view_ gibi iteratorleri kopyalanamayan range'ler _common range_'e dönüştürülemiyorlar. Peki, başka hangi yöntemler söz konusu olabilir?
+_basic_istream_view_ gibi iteratorleri kopyalanamayan _range_'ler _common range_'e dönüştürülemiyorlar. Peki, başka hangi yöntemler söz konusu olabilir?
 
 önce container'i default init edip sonra ona insert edeliö
 ama burada da CTAD kullanılmaz
@@ -40,12 +40,12 @@ idare eder. Ama türün ne olduğunu yazmak zor olabilir
 
 _range_value_t_ yardımcısını kullanabiliriz.
 
-`` 
+``
 std::vector<std::ranges::range_value_t<decltype(rng)>> vec;
 std::ranges::copy(rng, std::back_inserter(vec));
 ```
 burada _reserve_ fonksiyonu çağırmak daha iyi bir fikir. Ancak bunun için de _range_'in _size_'ının bilinmesi gerekiyor.
-buun için de range'in sized_range olması gerekir.
+Bunun için de _range_'in _sized_range_ olması gerekir.
 
 
 ```
