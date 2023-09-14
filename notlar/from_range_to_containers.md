@@ -1,3 +1,5 @@
+[kaynak makale](https://timur.audio/how-to-make-a-container-from-a-c20-range)
+
 _rng_ bir _range_ olsun. Ve bu _range_'i bir _container_'a örneğin bir _std::vector_'e dönüştürmek isteyelim:
 
 ```
