@@ -33,9 +33,7 @@ Ancak bu da bütün _range_'ler için çalışmıyor.
 _basic_istream_view_ gibi iteratorleri kopyalanamayan _range_'ler _common range_'e dönüştürülemiyorlar. 
 Peki, başka hangi yöntemler söz konusu olabilir?
 
-Önce _container_'i _default constructor_ ile hayata başlatıp edip daha sonra ona _range_'deki öğeleri ekleyebiliriz ( edebiliriz.)
-
-Ancak burada CTAD'dan faydalanamayız.
+Önce _container_'i _default constructor_ ile hayata başlatıp edip daha sonra ona _range_'deki öğeleri ekleyebiliriz. Ancak burada _CTAD_'dan faydalanamayız.
 ```
 std::vector<mytype> vec;
 std::ranges::copy(rng, std::back_inserter(vec));
