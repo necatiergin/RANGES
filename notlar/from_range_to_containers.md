@@ -4,9 +4,10 @@ _rng_ bir _range_ olsun. Ve bu _range_'i bir _container_'a örneğin bir _std::v
 vector<int> ivec(rng);
 ```
 Kapların böyle bir kurucu işlevi olmadığı için yukarıdaki kod sentaks hatası oluşturacak. Eric Niebler'in kütüphanesinde to isimli fonksiyon bu işi görüyor. 
-Bu fonksiyon C++23 standardı ile dile ekleniyor. 
+Bu fonksiyon C++23 standardı ile dile ekleniyor:
+```
 auto v = std::ranges::to<std::vector>(r);
-
+```
 Peki böyle bir fonksiyon yok ise ne yapacağız?
 ```
 std::vector vec(rng.begin(), rng.end());
@@ -16,11 +17,10 @@ ya da
 ```
 vector vec(std::ranges::begin(rng), std::ranges::end(rng));
 ```
-Ama burada da şöyle bir sorun var.
-Bunların aynı ytürden olması gerekiyuor
-birçok tange için begin ve end dönüşleri farklı türden
-eğer bunların türleri aynı ise böyle range'lere common_range diyoruz
-common_rangler coomon_range concept'ini kRŞILIYORLAER
+Ama burada da şöyle bir sorun var. Kurucu işleve gönderilen argümanların aynı türden olması gerekiyor.
+Birçok range için _begin_ ve _end_ fonksiyonlarının geri dönüş türleri farklı. 
+Eğer bunların türleri aynı ise böyle _range_'ler _common_range_ diyoruz.
+_common_range_'ler _common_range_ concept'ini karşılıyorlar.
 
 COMMON RANGE OLMAYAN BİR RABNEGİ COMMON RANGE E DÖNÜŞTÜREBİLİRİ<
 
