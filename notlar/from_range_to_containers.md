@@ -1,29 +1,21 @@
-container'ların range paramretli ctor'ları halen yok:
-Bir range'i bir container'e nasıl dönüştüreceğiz
+_rng_ bir _range_ olsun. Ve bu _range_'i bir _container_'a örneğin bir _std::vector_'e dönüştürmek isteyelim:
 
-eric niebler'in range-v3 kütüohanesinde var.
-C++20 standartı ile benzeri standart hale geliyor
-
-rng bir range olsun. Ve bu range'i bir container'a örneğin bir std::vector'er dönüştürmek isteyelim.
-
-
+```
 vector<int> ivec(rng);
-
-Kapların böyle bir ctor'ı olmadığı için sentaks hatası
-eric niebler'in kütüphanesinde 
-to fonksiyonu bıu işi hallediyor
-bu fonksiyon C++23 ile standar t oluyor
-
+```
+Kapların böyle bir kurucu işlevi olmadığı için yukarıdaki kod sentaks hatası oluşturacak. Eric Niebler'in kütüphanesinde to isimli fonksiyon bu işi görüyor. 
+Bu fonksiyon C++23 standardı ile dile ekleniyor. 
 auto v = std::ranges::to<std::vector>(r);
 
 Peki böyle bir fonksiyon yok ise ne yapacağız?
-
-vector v(rng.begin(), rng.end());
-
+```
+std::vector vec(rng.begin(), rng.end());
+```
 ya da 
 
-vector v(std::ranges::begin(rng), std::ranges::end(rng));
-
+```
+vector vec(std::ranges::begin(rng), std::ranges::end(rng));
+```
 Ama burada da şöyle bir sorun var.
 Bunların aynı ytürden olması gerekiyuor
 birçok tange için begin ve end dönüşleri farklı türden
