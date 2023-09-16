@@ -1,6 +1,7 @@
 #include <vector>
 #include <ranges>
 #include <iostream>
+#include <format>
 
 int main()
 {
@@ -23,4 +24,6 @@ int main()
 
 	for (const auto i : sr2)
 		cout << i << ' '; //1,2,3,4,5 
+	
+	cout << std::format("\n{}\n{}\n", sr1, sr2);
 }
