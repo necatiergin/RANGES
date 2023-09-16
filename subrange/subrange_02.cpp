@@ -22,5 +22,5 @@ int main()
 		std::cout << val;
 	}
 
-	//std::cout << format("{}\n", sr2); //C++23
+	//std::cout << format("{}\n", sb); //C++23
 }
