@@ -10,7 +10,7 @@ int main()
 
 	auto destvec = ivec | std::views::filter([](int x) {return x > 10 && x < 20; })
 		| std::views::transform([](int x) {return x * 10; })
-		| std::ranges::to<std::vector<int>>();
+		| std::ranges::to<std::vector<>>();
 
 	for (auto val : destvec)
 		std::cout << val << ' ';
