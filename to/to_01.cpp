@@ -14,5 +14,4 @@ int main()
 
 	for (auto val : destvec)
 		std::cout << val << ' ';
-
 }
