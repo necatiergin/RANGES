@@ -14,13 +14,12 @@ struct Sentinel {
 int main()
 {
 	using namespace std;
+	
 	vector<int> ivec(20);
 	ivec[5] = -1;
 
 	ranges::subrange sr(ivec.begin(), Sentinel<-1>());
 	auto cv = views::common(sr);
-	auto n = count(cv.begin(), cv.end(), 0);
-
-	cout << "n = " << n << '\n';
-
+	auto cnt = count(cv.begin(), cv.end(), 0);
+	cout << "cnt = " << cnt << '\n';
 }
