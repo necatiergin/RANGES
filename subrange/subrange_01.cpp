@@ -25,5 +25,5 @@ int main()
 	for (const auto i : sr2)
 		cout << i << ' '; //1,2,3,4,5 
 	
-	cout << std::format("\n{}\n{}\n", sr1, sr2);
+	cout << std::format("\n{}\n{}\n", sr1, sr2); //C++23
 }
