@@ -1,0 +1,6 @@
+- _std::ranges_ kütüphanesiyle gelen yeni algoritmalar <algorithm> başlık dosyasında _std::ranges_ isim alanı içinde
+- _STL_ algoritmalarına benziyor. Ancak iterator çifti yanısıra doğrudan bir _range_'i argüman olarak alabiliyor.
+- iterasyon içsel olarak algoritma tarafından kontrol ediliyor.
+- _projection_ parametresi kullanabiliyoruz. (Bu özellik STL algoritmalarında yok)
+- _begin_ ve _end_ iteratorlerinin aynı tüden olmaları gerekmiyor.
+- _std::ranges_ algoritmalarının geri dönüş değerleri iyileştirilmiş, geliştirilmiş. Daha fazla bilgi veriyor.
