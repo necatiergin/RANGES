@@ -11,12 +11,11 @@ struct EndValue
 	}
 };
 
-
 int main()
 {
 	using namespace std;
 
-	vector ivec{12, 5, 218, 9, 3, 24, -1, 9, 41, 6}; //
+	vector ivec{12, 5, 218, 9, 3, 24, -1, 9, 41, 6}; 
 
 	auto iter1 = ranges::find( ivec.begin(), EndValue<-1>{}, 9 );
 	auto iter2 = ranges::find( ivec.begin(), EndValue<-1>{}, 41 );
