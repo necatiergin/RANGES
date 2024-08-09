@@ -3,6 +3,7 @@
 #include <vector>
 #include <print>
 #include <iterator>
+#include <algorithm>
 
 int main()
 {
