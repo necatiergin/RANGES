@@ -12,14 +12,13 @@ struct nullchar_t {
 
 inline constexpr nullchar_t nullchar;
 
-
 int main()
 {
 	const char* p = "biz bugun range kutuphanesini ogreniyoruz";
 
-
+	//for (auto ptr{ p }; ptr != nullchar_t{}; ++ptr)
 	for (auto ptr{ p }; ptr != nullchar; ++ptr)
-		std::cout << *ptr << " ";
+		std::cout << *ptr << ' ';
 
 	std::cout << "\n";
 
