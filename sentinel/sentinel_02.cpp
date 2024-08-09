@@ -17,7 +17,7 @@ int main()
 {
 	using namespace std;
 
-	vector ivec{ 12,59,78,96,46,-1,123,74,63,71 };
+	vector ivec{12, 59, 78, 96, 46, -1, 123, 74, 63, 71 };
 
 	ranges::sort(ivec.begin(), EndValue<-1>{});
 
