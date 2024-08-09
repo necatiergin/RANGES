@@ -8,7 +8,7 @@
 int main()
 {
 	using namespace std;
-	
+
 	vector<int> ivec(100);
 	iota(ivec.begin(), ivec.end(), 0);
 	mt19937 eng{ random_device{}() };
