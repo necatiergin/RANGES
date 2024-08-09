@@ -4,4 +4,6 @@
 - iterasyon içsel olarak algoritma tarafından kontrol ediliyor.
 - _projection_ parametresi kullanabiliyoruz. (Bu özellik _STL_ algoritmalarında yok)
 - _begin_ ve _end_ iteratorlerinin aynı tüden olmaları gerekmiyor.
-- _std::ranges_ algoritmalarının geri dönüş değerleri iyileştirilmiş, geliştirilmiş. Daha fazla bilgi veriyor.
+- _std::ranges_ algoritmalarının geri dönüş değerleri iyileştirilmiş, geliştirilmiş. Daha fazla bilgi veriyor. <br>
+STL'de yalnızca iterator döndüren bazı algoritmaların geri dönüş türleri ranges kütüphanesinde iterator içeren _struct_'lar.<br>
+- algoritmadan elde edilen bilgiler _discard_ edilmiyor.
