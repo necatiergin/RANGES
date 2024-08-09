@@ -1,6 +1,7 @@
 #include <iostream>
 #include <vector>
 #include <algorithm>
+#include <ranges>
 
 template<auto EndVal> 
 struct EndValue
@@ -10,7 +11,6 @@ struct EndValue
 		return *pos == EndVal; 
 	}
 };
-
 
 int main()
 {
