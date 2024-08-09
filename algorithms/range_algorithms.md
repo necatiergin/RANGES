@@ -6,4 +6,4 @@
 - _begin_ ve _end_ iteratorlerinin aynı tüden olmaları gerekmiyor.
 - _std::ranges_ algoritmalarının geri dönüş değerleri iyileştirilmiş, geliştirilmiş. Daha fazla bilgi veriyor. <br>
 STL'de yalnızca iterator döndüren bazı algoritmaların geri dönüş türleri ranges kütüphanesinde iterator içeren _struct_'lar.<br>
-- algoritmadan elde edilen bilgiler _discard_ edilmiyor.
+algoritmadan elde edilen bilgiler _discard_ edilmiyor.
