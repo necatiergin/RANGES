@@ -19,3 +19,6 @@ int main()
 }
 ```
 
+_range_'lerin sağladığı temel avantajlardan biri aralıklar üzerinde çalışan _STL_ algoritmalarını fonksiyonel programlamayı andıran bir biçimde kullandırabilmesidir.
+
+
