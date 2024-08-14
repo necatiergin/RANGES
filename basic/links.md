@@ -29,4 +29,7 @@
 [CppCon 2018: Arno Schoedl “Range-Based Text Formatting For a Future Range-Based Standard Library”](https://www.youtube.com/watch?v=uCybqSX1idU&t=611s)<br>
 [Livecoding C++ Ranges: cycle and cartesian_product](https://www.youtube.com/watch?v=nxRRQy9_Nn8)<br>
 [The Surprising Complexity of Formatting Ranges in Cpp - Barry Revzin - CppCon 2022](https://www.youtube.com/watch?v=EQELdyecZlU&t=1282s)<br>
-
+[What a View! Building Your Own (Lazy) Range Adaptors (part 1 of 2) - Chris Di Bella - CppCon 2019](https://www.youtube.com/watch?v=YWayW5ePpkY&t=1930s)<br>
+[C++ CoreHard Autumn 2018. Asynchronous programming with ranges - Ivan Čukić](https://www.youtube.com/watch?v=5U8eN1h2_w0)<br>
+[What a View! Building Your Own (Lazy) Range Adaptors (part 2 of 2) - Chris Di Bella - CppCon 2019](https://www.youtube.com/watch?v=g-F280_AQp8)<br>
+[Visual C++ STL Code Review: GH-1877, Conditionally Borrowed Ranges](https://www.youtube.com/watch?v=kuW9IB63MDU)
