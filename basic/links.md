@@ -10,3 +10,5 @@
 [Lightning Talk: operator for - C++ Generator Ranges Without Coroutine Overhead - Jonathan Müller](https://www.youtube.com/watch?v=l7ntC-Y1syY)<br>
 [Livecoding C++ Ranges: chunk_by and chunk_by_key](https://www.youtube.com/watch?v=A4J7mlA4ang)<br>
 [Back to Basics: (Range) Algorithms in C++ - Klaus Iglberger - CppCon 2023](https://www.youtube.com/watch?v=eJCA2fynzME&t=91s)<br>
+[Lightning Talk: Source/Sink vs. Ranges in C++ - What's the Difference? - Tony Van Eerd - CppNow 2023](https://www.youtube.com/watch?v=BChyPWorFvg)<br>
+[Belle Views on C++ Ranges, their Details and the Devil - Nico Josuttis - Keynote Meeting C++ 2022](https://www.youtube.com/watch?v=O8HndvYNvQ4)<br>
