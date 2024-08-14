@@ -15,3 +15,18 @@
 [Adapting C++20 Ranges Algorithms for Most Metaprogramming Needs in Fewer Than 1,000 Lines of Code](https://www.youtube.com/watch?v=69PuizjrgBM)<br>
 [C++ Concepts and Ranges - Mateusz Pusz - Meeting C++ 2018](https://www.youtube.com/watch?v=pe05ZWdh0N0)<br>
 [C++20 Ranges in Practice - Tristan Brindle - CppNorth 2022](https://www.youtube.com/watch?v=L0bhZp6HMDM&t=892s)<br>
+[Back to Basics: Iterators in C++ - Nicolai Josuttis - CppCon 2023](https://www.youtube.com/watch?v=26aW6aBVpk0&list=PLrR3oTpJZ9Tgne4titkSAv6nNxSdkzEBq)<br>
+[Throwing Tools at C++ Ranges - Tina Ulbrich - C++ on Sea 2023](https://www.youtube.com/watch?v=l8D6CAN2rCk)<br>
+[Keynote: Iterators and Ranges: Comparing C++ to D, Rust, and Others - Barry Revzin - CPPP 2021](https://www.youtube.com/watch?v=95uT0RhMGwA)<br>
+[C++ STD Gems [C++20 Ranges]](https://www.youtube.com/watch?v=DM9hcU8Qe04)<br>
+[C++Now 2019: Jeff Garland “Using C++20 Ranges Effectively”](https://www.youtube.com/watch?v=VmWS-9idT3s&t=14s)<br>
+[Applying the Lessons of std::ranges to Unicode in the C++ Standard Library - Zach Laine CppNow 2023](https://www.youtube.com/watch?v=AoLl_ZZqyOk)<br>
+[23 Ranges: slide & stride - Conor Hoekstra - CppCon 2019](https://www.youtube.com/watch?v=-_lqZJK2vjI)<br>
+[2021 Advanced C++ workshop - Ranges](https://www.youtube.com/watch?v=Zg9S-MVGgZs)<br>
+[Livecoding C++ Ranges: std::ranges::to](https://www.youtube.com/watch?v=lU403RAZV0I)<br>
+[C++ Russia 2018: Arno Schödl, From Iterators To Ranges](https://www.youtube.com/watch?v=OI0YFgEscGQ)<br>
+[C++20 Ranges" by Filip Brcic](https://www.youtube.com/watch?v=gcuiHA1DhvA)<br>
+[CppCon 2018: Arno Schoedl “Range-Based Text Formatting For a Future Range-Based Standard Library”](https://www.youtube.com/watch?v=uCybqSX1idU&t=611s)<br>
+[Livecoding C++ Ranges: cycle and cartesian_product](https://www.youtube.com/watch?v=nxRRQy9_Nn8)<br>
+[The Surprising Complexity of Formatting Ranges in Cpp - Barry Revzin - CppCon 2022](https://www.youtube.com/watch?v=EQELdyecZlU&t=1282s)<br>
+
