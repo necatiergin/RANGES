@@ -12,3 +12,6 @@
 [Back to Basics: (Range) Algorithms in C++ - Klaus Iglberger - CppCon 2023](https://www.youtube.com/watch?v=eJCA2fynzME&t=91s)<br>
 [Lightning Talk: Source/Sink vs. Ranges in C++ - What's the Difference? - Tony Van Eerd - CppNow 2023](https://www.youtube.com/watch?v=BChyPWorFvg)<br>
 [Belle Views on C++ Ranges, their Details and the Devil - Nico Josuttis - Keynote Meeting C++ 2022](https://www.youtube.com/watch?v=O8HndvYNvQ4)<br>
+[Adapting C++20 Ranges Algorithms for Most Metaprogramming Needs in Fewer Than 1,000 Lines of Code](https://www.youtube.com/watch?v=69PuizjrgBM)<br>
+[C++ Concepts and Ranges - Mateusz Pusz - Meeting C++ 2018](https://www.youtube.com/watch?v=pe05ZWdh0N0)<br>
+[C++20 Ranges in Practice - Tristan Brindle - CppNorth 2022](https://www.youtube.com/watch?v=L0bhZp6HMDM&t=892s)<br>
