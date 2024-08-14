@@ -4,4 +4,9 @@
 [An Overview of Standard Ranges - Tristan Brindle - CppCon 2019](https://www.youtube.com/watch?v=SYLgG7Q5Zws&t=3446s)<br>
 [C++20 Ranges in Practice - Tristan Brindle - CppCon 2020](https://www.youtube.com/watch?v=d_E-VLyUnzc&t=879s)<br>
 [Better C++ Ranges - Arno Schödl - [CppNow 2021]](https://www.youtube.com/watch?v=P8VdPsLLcaE)<br>
-[An Overview of Standard Ranges - Tristan Brindle [ ACCU 2021 ]](https://www.youtube.com/watch?v=d9qDEEJFwNc)
+[An Overview of Standard Ranges - Tristan Brindle [ ACCU 2021 ]](https://www.youtube.com/watch?v=d9qDEEJFwNc)<br>
+[Range Algorithms, Views and Actions: A Comprehensive Guide - Dvir Yitzchaki - CppCon 2019](https://www.youtube.com/watch?v=qQtS50ZChN8&t=93s)<br>
+[More C++ Ranges Please - Roi Barkan - CppCon 2023](https://www.youtube.com/watch?v=Ugb8-ig7Pnw)<br>
+[Lightning Talk: operator for - C++ Generator Ranges Without Coroutine Overhead - Jonathan Müller](https://www.youtube.com/watch?v=l7ntC-Y1syY)<br>
+[Livecoding C++ Ranges: chunk_by and chunk_by_key](https://www.youtube.com/watch?v=A4J7mlA4ang)<br>
+[Back to Basics: (Range) Algorithms in C++ - Klaus Iglberger - CppCon 2023](https://www.youtube.com/watch?v=eJCA2fynzME&t=91s)<br>
