@@ -11,7 +11,6 @@ template< class T >
 concept range = requires( T& t ) {
     ranges::begin(t); // equality-preserving for forward iterators
     ranges::end (t);
-
 };
 ```
 
