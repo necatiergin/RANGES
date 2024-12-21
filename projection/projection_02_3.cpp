@@ -4,29 +4,27 @@
 
 struct Employee
 {
-	std::string name;
-	int id;
+	std::string m_name;
+	int m_id;
 };
 
 struct Payslip
 {
-	std::string pay_info;
-	int id;
+	std::string m_info;
+	int m_id;
 };
-
-
 
 int main()
 {
-	using namespace std;
+	namespace rng = std::ranges;
 
-	vector<Employee> evec(100);
-	vector<Payslip> pvec(100);
-	// code
-	ranges::sort(evec, {}, &Employee::id);
+	std::vector<Employee> evec(100);
+	std::vector<Payslip> pvec(100);
+	// some code
+	rng::sort(evec, {}, &Employee::m_id);
+	rng::sort(pvec, {}, &Payslip::m_id);
 
-	ranges::sort(pvec, {}, &Payslip::id);
-
-	auto b = ranges::equal(evec, pvec, {}, &Employee::id, &Payslip::id);
+	auto eq = rng::equal(evec, pvec, {}, 
+		&Employee::m_id, &Payslip::m_id);
 
 }
