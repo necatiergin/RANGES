@@ -4,7 +4,6 @@
 #include <iostream>
 #include <ranges>
 
-
 int main()
 {
     using namespace std;
