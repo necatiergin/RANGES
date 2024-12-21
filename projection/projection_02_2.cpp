@@ -14,8 +14,6 @@ struct Payslip
 	int id;
 };
 
-
-
 int main()
 {
 	using namespace std;
