@@ -23,4 +23,4 @@ int main()
 	std::cout << "\n";
 
 	std::ranges::for_each(p, nullchar, [](char c) {std::cout.put(c); });
-};
+}
