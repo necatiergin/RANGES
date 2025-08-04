@@ -8,3 +8,15 @@ concept sentinel_for =
         { s == i } -> std::convertible_to<bool>;
         { s != i } -> std::convertible_to<bool>;
     };
+
+
+/*
+
+std::semiregular<S> — Sentinel türü "semiregular" olmalı
+Bu şu anlama gelir:
+Default constructible - olmalı
+Copyable - olmalı
+Movable - olmalı
+Destructible - olmalı
+Assignable - olmalı
+*/
