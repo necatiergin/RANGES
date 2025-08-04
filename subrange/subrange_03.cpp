@@ -10,7 +10,7 @@ struct Sentinel {
 	}
 };
 
-void print(std::ranges::range auto &&r)
+void print_range(std::ranges::range auto&& r)
 {
 	for (const auto& val : r)
 		std::cout << val << ' ';
@@ -19,13 +19,11 @@ void print(std::ranges::range auto &&r)
 
 int main()
 {
-	using namespace std;
+	auto vw = std::ranges::iota_view{ 0, 10 };
+	std::vector vec(vw.begin(), vw.begin() + 10);
 
-	auto vw = ranges::iota_view{ 0, 10 };
-	vector vec(vw.begin(), vw.begin() + 10);
-
-	ranges::subrange s1{ vec.begin(), vec.begin() + 7};
-	ranges::subrange s2{ vec.begin(), Sentinel<5>{} };
-	print(s1);
-	print(s2);
+	std::ranges::subrange sr1{ vec.begin(), vec.begin() + 7 };
+	std::ranges::subrange sr2{ vec.begin(), Sentinel<5>{} };
+	print_range(sr1);
+	print_range(sr2);
 }
