@@ -6,11 +6,10 @@
 
 int main()
 {
-	int ar1[20]{};
+	int ar1[10]{};
 	int ar2[20]{};
 
 	using sbr_type1 = decltype(std::ranges::subrange{ ar1 });
 	using sbr_type2 = decltype(std::ranges::subrange{ ar2 });
 	static_assert(std::same_as<sbr_type1, sbr_type2>);
 }
-
