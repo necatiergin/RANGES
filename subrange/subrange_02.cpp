@@ -14,13 +14,14 @@ public:
 
 int main()
 {
-	using namespace std;
-	vector<int> ivec{ 1, 3, 5, 7, 2, 9 };
-	ranges::subrange sb(ivec.begin(), Sentinel<13>{});
-	
+	std::vector<int> ivec{ 1, 3, 5, 7, 2, 9, 8, 4 };
+	std::ranges::subrange sb(ivec.begin(), Sentinel<8>{});
+
 	for (auto val : sb) {
-		std::cout << val;
+		std::cout << val << ' ';
 	}
 
-	//std::cout << format("{}\n", sb); //C++23
+	std::cout << "\n";
+
+	std::cout << format("{}\n", sb); //C++23
 }
