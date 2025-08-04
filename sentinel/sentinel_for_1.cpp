@@ -19,4 +19,5 @@ Copyable - olmalı
 Movable - olmalı
 Destructible - olmalı
 Assignable - olmalı
+
 */
