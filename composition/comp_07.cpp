@@ -5,11 +5,9 @@
 
 int main()
 {
-	using namespace std;
+	std::list<std::string> slist{ "deniz", "yusuf", "huseyin", "mahir", "taylan" };
 
-	list<string> slist{ "deniz", "yusuf", "huseyin", "mahir", "taylan" };
-
-	for (auto s : views::reverse(slist) | views::take(3)) {
-		cout << s << ' ';
+	for (auto s : std::views::reverse(slist) | std::views::take(3)) {
+		std::cout << s << ' ';
 	}
 }
