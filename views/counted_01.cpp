@@ -9,19 +9,17 @@
 
 int main()
 {
-	using namespace std;
+	std::vector vec{ 3, 1, 23, 4, 7, 9, 11, 2, 6, 5, 8, 0, 28 };
 
-	std::vector vec{ 3, 1, 23, 4, 7, 9, 11, 2, 6, 5, 8, 0, 28};
-
-	ranges::copy(vec, ostream_iterator<int>{cout, " "});
-	cout << '\n';
+	std::ranges::copy(vec, std::ostream_iterator<int>{std::cout, " "});
+	std::cout << '\n';
 	int n;
 
-	cout << "enter number of elements : ";
-	cin >> n;
+	std::cout << "enter number of elements : ";
+	std::cin >> n;
 
-	for (auto i : ranges::views::counted(vec.begin(), n))
-		cout << i << ' ';
+	for (auto i : std::ranges::views::counted(vec.begin(), n))
+		std::cout << i << ' ';
 
-	cout << '\n';
+	std::cout << '\n';
 }
