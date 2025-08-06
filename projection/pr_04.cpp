@@ -13,8 +13,7 @@ int main()
         {3, "cherry", 1.41}
     };
 
-   
-    std::ranges::sort(records, {}, [](const auto& t) {
+       std::ranges::sort(records, {}, [](const auto& t) {
         return std::get<2>(t);
         });
 
