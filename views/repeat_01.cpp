@@ -4,15 +4,15 @@
 //C++23
 int main()
 {
-	using namespace std;
+	namespace vw = std::views;
 
-	for (auto i : views::repeat(5, 7))
+	for (auto i : vw::repeat(5, 7))
 		std::cout << i;
 
-	cout << '\n';
+	std::cout << '\n';
 
-	for (auto i : views::repeat('A') | views::take(4))
+	for (auto i : vw::repeat('A') | vw::take(4))
 		std::cout << i;
 
-	cout << '\n';
+	std::cout << '\n';
 }
