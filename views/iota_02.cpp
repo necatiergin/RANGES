@@ -2,7 +2,6 @@
 #include <vector>
 #include <iostream>
 
-
 int main()
 {
 	auto source = std::views::iota(10) | std::views::take(20) |
